@@ -1,0 +1,15 @@
+# Ignore installed npm related files
+node_modules/**/*
+
+# Ignore all logfiles and tempfiles.
+log/**/*
+
+# Ignore installed npm related files
+node_modules/**/*
+
+# Ignore sublime project files
+*.sublime-project
+*.sublime-workspace
+
+# Ignore development variables
+config/config-variables.js

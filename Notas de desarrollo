@@ -1,0 +1,19 @@
+Notas de desarrollo
+
+Justificacion
+- Los datos estan almacenados en una db en un cluster de mongo para demostrar su implementación
+- Para manipular los modelos se utiliza mongoose por su facilidad en manipular el ODM
+- Se ha implementado Grunt para poder resetear los datos "grunt reset", borrar los datos "grunt removeDB" y iniciar la aplicación "grunt serve"
+- Se ha implementado varios middleware:
+  - authenticationMiddleware. Añade en la petición el usuario el cual la realiza.
+  - authorisationMiddleware. Comprueba si el usuario que realiza la petición tiene el rol permitido.
+  - errorMiddleware. Controla y manipula los errores internos que puedan suceder.
+  - notFoundMiddleware. Se encarga de devolver información cuando la ruta no se encuentra.
+- Se ha dividido el codigo siguiendo el patrón MVC.
+- Se ha añadido un archivo de configuración con los datos de conexión a añadir.
+
+Mejoras
+
+- Se pueden añadir views a las respuestas de las peticiones. De ese modo se pueden dar un formato a las respuestas como una web.
+- El sistema de autenticación lo normal es que cada usuario tenga un password el cual se identifique solamente el.
+- El errorMiddleware podria llegar a ser mas complejo según la especificación del error que pueda ocurrir.

@@ -18,7 +18,7 @@
     "grunt": "^1.0.1",
     "grunt-nodemon": "^0.4.2",
     "load-grunt-tasks": "^3.5.2",
-    "mongoose": "^4.11.12",
+    "mongoose": "^5.7.8",
     "mongoskin": "^2.1.0",
     "morgan": "^1.8.2",
     "require-directory": "^2.1.1"
